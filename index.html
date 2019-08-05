@@ -1,0 +1,90 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<header ><h1 id="title">Survey Form</h1></header>
+<p id="description">Let us know how we can improve freeCodeCamp</p>
+<form id="survey-form">  
+  <div>
+  <label for="username" id="name-label">* Name: </label> 
+    <input autofocus type="text" name="userName" id="name" class="input-field" placeholder="Enter your name" required></div>
+   <div  >
+  <label for="email" id="email-label">* email: </label>
+    <input autofocus type="email" name="emai;" id="email" class="input-field" placeholder="Enter your email" required> </div>
+   <div  >
+  <label for="userAge" id="number-label">* Age: </label>
+    <input type="number" name="number" id="number"  min="1" max="125" class="input-field" placeholder="age" required> 
+  </div>
+
+  <label id="dropdown">
+    <label for="currentPos" >Which option best describes your current role?</label>
+  
+    <select id="currentPos" name="currentPos">
+      <option disabled selected value>Select an option</option>
+      <option value="student">Student</option>
+      <option value="job">Full Time Job</option>
+      <option value="learner">Full Time Learner</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+  </label>
+  
+<div class="rightTab">
+    <ul style="list-style: none;"> 
+    <li><label>1<input name="rating" value="1" type="radio" class="userRatings" required></label></li>
+    <li><label>2<input name="rating" value="2" type="radio" class="userRatings" required></label></li>
+    <li><label>3<input name="rating" value="3" type="radio" class="userRatings" required></label></li>
+    <li><label>4<input name="rating" value="4" type="radio" class="userRatings" required></label></li>
+    <li><label>5<input name="rating" value="5" type="radio" class="userRatings" required></label></li>
+    <li><label>6<input name="rating" value="6" type="radio" class="userRatings" required></label></li>
+    <li><label>7<input name="rating" value="7" type="radio" class="userRatings" required></label></li>
+    <li><label>8<input name="rating" value="8" type="radio" class="userRatings" required></label></li>
+    <li><label>9<input name="rating" value="9" type="radio" class="userRatings" required></label></li>
+    <li><label>10<input name="rating" value="10" type="radio" class="userRatings" required></label></li>  
+    </ul> 
+  </div>
+    </div>
+    <div class="rowTab">
+    <div class="labels">
+  <label for="most-like">What do you like most in FCC: </label>
+  </div> 
+  <div class="rightTab">
+    <select id="most-like" name="mostLike">
+      <option disabled selected value>Select an option</option>
+      <option value="challenges">Challenges</option>
+      <option value="projects">Projects</option>
+      <option value="community">Community</option>
+      <option value="openSource">Open Source</option>
+    </select> 
+  </div>
+    </div>
+    <div class="rowTab">
+    <div class="labels">
+  <label for="preferences">Things that should be improved more in future<br>(Check all that implies): </label>
+  </div> 
+  <div class="rightTab">
+    <ul id="preferences" style="list-style: none;"> 
+    <li><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label></li>
+    <li><label><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</label></li>
+    <li><label><input name="prefer" value="3" type="checkbox" class="userRatings">Data Visualization</label></li>
+    <li><label><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label></li>
+    <li><label><input name="prefer" value="5" type="checkbox" class="userRatings">Open Source Community</label></li>
+    <li><label><input name="prefer" value="6" type="checkbox" class="userRatings">Gitter helper rooms</label></li>
+    <li><label><input name="prefer" value="7" type="checkbox" class="userRatings">Hikes</label></li>
+    <li><label><input name="prefer" value="8" type="checkbox" class="userRatings">City Meetups</label></li>
+    <li><label><input name="prefer" value="9" type="checkbox" class="userRatings">Wiki</label></li>
+    <li><label><input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label></li>
+    <li><label><input name="prefer" value="10" type="checkbox" class="userRatings">Additional Courses</label></li>
+    </ul>
+  </div>
+    </div>
+    <div class="rowTab">
+    <div class="labels">
+  <label for="comments">Any Comment or Suggestion</label>
+  </div> 
+  <div class="rightTab">
+    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea> 
+  </div>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</div>
+
